@@ -1,0 +1,16 @@
+
+<h3> Register </h3>
+
+
+<form method="POST" action="">
+    {% csrf_token %}
+   
+    {{form.email.label}}
+    {{form.email}}
+
+    {{form.password.label}}
+    {{form.password}}
+
+    <input type="submit" name = "Create User">
+</form>
+
