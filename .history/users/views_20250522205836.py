@@ -19,6 +19,9 @@ def registerPage(request):
                                              email=email,
                                                password=password)
             user.save()
+
+            messages.success(request,
+                              'Account created successfully! You can now log in.')
             return redirect('login') 
         else:
             pass 
